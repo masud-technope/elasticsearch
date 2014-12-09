@@ -188,6 +188,7 @@ public class LongAdder extends Striped64 implements Serializable {
         s.writeLong(sum());
     }
 
+    //reading a stream object
     private void readObject(java.io.ObjectInputStream s)
         throws java.io.IOException, ClassNotFoundException {
         s.defaultReadObject();
